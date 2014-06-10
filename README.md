@@ -1,6 +1,6 @@
 Just install with
 
-	python setup.py install
+	pip install numpy_display
 
 and then type the following in your IPython notebook:
 
