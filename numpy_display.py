@@ -1,4 +1,5 @@
 # Petter Strandmark 2014.
+import numpy
 
 ip = None
 try:
@@ -12,8 +13,11 @@ if ip is not None:
 		html = '<table>'
 		for row in A:
 			html += "<tr>"
-			for elem in row:
-				html += "<td>" + str(elem) + "</td>"
+			if isinstance(row, numpy.ndarray):
+				for elem in row:
+					html += "<td>" + str(elem) + "</td>"
+			else:
+				html += "<td>" + str(row) + "</td>"
 			html += "</tr>"
 		html += '</table>'
 		return html
