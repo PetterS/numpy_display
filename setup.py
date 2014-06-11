@@ -29,7 +29,7 @@ setup(
 	],
 
 	name="numpy_display",
-	version="1.1.0",
+	version="1.2.0",
 	py_modules=["numpy_display"],
 
 	install_requires=["numpy"]
